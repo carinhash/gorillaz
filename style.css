@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    /*define o tamanho da margem*/
+    padding: 0;
+    /* espaço de dentro para fora */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+    /*troca a fonte da letra*/
+    line-height: 1.5;
+    /*altura da linha*/
+    background-color: #a6a6a6b9;
+    /*troca a cor do fundo*/
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    /* topo do site */
+    width: 100%;
+    /* largura */
+    background-color: #05012398;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    /* ajustar o texto horizontalmente*/
+}
+
+nav ul li {
+    margin: 0 44px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    /*altera a cor do texto*/
+    text-decoration: none;
+    font-size: 18px;
+    /*muda o tamanho da letra*/
+    padding: 10px;
+    transition: color 0.4s;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+section:not(#home) {
+    padding: 100px 20px;
+    text-align: center;
+    /*alinha o texto em certa poscição*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* alinhamento vertical */
+    height: 100vh;
+}
+
+#home {
+    /* background-color: #000000; */
+    background-image: url(https://i.pinimg.com/1200x/5e/59/4c/5e594c4d17e90ed2149d38a1cebecc27.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 150vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.content .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.content .text p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+#about {
+    background-color: #191414;
+}
+
+#two-d {
+    background-color: #191414;
+}
+
+#murdoc {
+    background-color: #191414;
+}
+
+#russel {
+    background-color: #191414;
+}
+
+#noodle {
+    background-color: #191414;
+}
+
+#album {
+    background-color: #191414;
+    
+}
+.cta-button {
+    margin-top: 30px;
+    background-color: #1db954;
+    color: #191414;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px #ffffffdd;
+    transition: background-color 1s ease, transform 1s ease;
+}
+.cta-button:hover{
+    box-shadow: 0px 1px 3px #ffffffdd;
+}
